@@ -16,7 +16,7 @@ which is already enough to tell whether someone is looking at their screen.
 ## Install
 
 ```bash
-git clone <this repo> && cd ScreenLocNet
+git clone https://github.com/Yifehuang97/ScreenLocNet && cd ScreenLocNet
 pip install -r requirements.txt
 ```
 

@@ -73,17 +73,6 @@ order-sensitive control behaves the same way. Read the gaze branch as a multi-sc
 frames. Use `metrics.recording_bootstrap`, which resamples whole recordings; it roughly
 quadruples the interval and is the honest number.
 
-## Scope
-
-Desktop screens at 0.3 to 0.8 m, one screen, viewer seated. From a single head position
-the gaze cone is scale-ambiguous, and the degeneracy is broken by the face-anchored
-point map rather than by head motion, which is only about 0.4 cm RMS in this data. A
-very large screen viewed by a static subject is genuinely ill-posed from gaze alone.
-Multi-monitor setups are not modelled.
-
-Data was collected under IRB approval with informed consent. Anyone deploying this for
-attention monitoring should think hard about notice and consent first.
-
 ## Citation
 
 ```bibtex

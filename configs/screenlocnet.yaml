@@ -1,0 +1,17 @@
+# Setting behind Tables 1 and 2 of the paper.
+data_root: /path/to/ScrLoc30Exp
+test_scene: 2          # 2 -> trains on Scenes 1+3 (2,055 clips)
+                       # 3 -> trains on Scene 1 only (1,731 clips)
+model:
+  dim: 768
+  layers: 8
+  heads: 8
+  pred_type: two_corners_sc    # the 8-DOF rectangle parameterisation
+train:
+  epochs: 10
+  lr: 1.0e-5
+  batch_size: 4
+  lr_step: 5
+  lr_gamma: 0.5
+  seed: 3421
+  select_on: val_corner_dist   # never on test

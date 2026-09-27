@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+numpy
+scipy
+shapely
+einops
+omegaconf
+scikit-learn

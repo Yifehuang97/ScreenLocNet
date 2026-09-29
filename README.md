@@ -20,20 +20,6 @@ git clone https://github.com/Yifehuang97/ScreenLocNet && cd ScreenLocNet
 pip install -r requirements.txt
 ```
 
-## Data
-
-```bash
-python scripts/download_data.py --out /path/to/ScrLoc30Exp
-```
-
-ScreenLoc is 151 recording sessions from 34 subjects across 3 scenes, cut into 2,802
-clips of 1,200 face-valid frames. Each clip ships as one `.npz` with the per-frame
-gaze rays, the ground-truth screen corners, and the recording and session ids.
-
-Ground truth came from an auxiliary camera with AprilTag markers at the screen corners.
-Its calibration reprojection error has a median of 2.4 px, far below the errors the
-method itself makes.
-
 ## Train and evaluate
 
 ```bash
@@ -57,7 +43,6 @@ screenlocnet/
   train.py       training entry point
   evaluate.py    evaluation entry point
 baselines/       input-free, gaze-only and geometric-fitting comparisons
-scripts/         data download
 docs/            reproduction notes and the full baseline table
 ```
 
